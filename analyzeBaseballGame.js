@@ -25,9 +25,9 @@ function analyzeBaseballGame(gameArray) {
   }
 
   // Determine winner of the game based on the totals
-  if (homeScoreTotal > awayScoreTotal) {
+  if (gameStats.homeTotal > gameStats.awayTotal) {
     gameStats.winner = "home";
-  } else if (homeScoreTotal < awayScoreTotal) {
+  } else if (gameStats.homeTotal < gameStats.awayTotal) {
     gameStats.winner = "away";
   } else {
     gameStats.winner = "tie";
@@ -43,3 +43,4 @@ const innings = [
   [4, 1],
 ];
 console.log(analyzeBaseballGame(innings));
+
