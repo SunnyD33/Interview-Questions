@@ -34,4 +34,5 @@ const tasks = [
     ["Prep Salad", 12, 13]
 ];
 
-maxMealPrepTasks(tasks);
+console.log(maxMealPrepTasks(tasks));
+
